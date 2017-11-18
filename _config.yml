@@ -3,4 +3,5 @@ defaults:
     scope:
       path: ""
     values:
+      title: "Mission Properties"
       layout: "default"
