@@ -171,7 +171,7 @@
 		PAGE PRELOADER
 	=============================================== */
 
-		jQuery("#preloader").delay(900).fadeOut(500); 
+		$("#preloader").delay(900).fadeOut(500);
 		
 	});
 
