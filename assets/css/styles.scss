@@ -1,8 +1,35 @@
 ---
 ---
 
-@import "preloader";
+$primary:       #2AAAB3;
+$secondary:     #53C4B7;
+$success:       #A5D6A7;
+$info:          #90CAF9;
+$warning:       #FFF59D;
+$danger:        #EF9A9A;
+
+$theme-colors: (
+  "gray": #9E9E9E
+);
+
+@import "bootstrap/bootstrap";
 @import "home";
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bottom-shadow {
+  box-shadow: 0 0 3px #424242;
+}
+
+.bg-white-out {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.round-edges {
+  border-radius: 3px;
+}
 
 .w-auto {
   width: auto;
@@ -10,4 +37,43 @@
 
 .h-auto {
   height: auto;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.bg-white-slide-appear {
+  background-color: rgba(255, 255, 255, 0);
+
+  @include media-breakpoint-down(md) {
+    background-color: rgb(255, 255, 255) !important;
+  }
+
+}
+
+.bg-image-parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-center {
+  background-position: center;
+}
+
+.bg-image-top {
+  background-position: top;
+}
+
+.bg-image-bottom {
+  background-position: bottom;
+}
+
+.bg-image-left {
+  background-position: left;
+}
+
+.bg-image-right {
+  background-position: right;
 }
