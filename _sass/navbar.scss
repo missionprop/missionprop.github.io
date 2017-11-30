@@ -8,8 +8,12 @@
   }
 }
 
+.collapse.navbar-collapse {
+  flex-grow: 0;
+}
+
 .navbar-links {
-  padding: 3px 10% 3px 15px;
+  padding: 3px 20% 3px 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 
