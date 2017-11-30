@@ -1,0 +1,19 @@
+.navbar-brand {
+  padding: 7px 15px 7px 10%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 15px;
+  }
+}
+
+.navbar-links {
+  padding: 3px 10% 3px 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  @include media-breakpoint-down(md) {
+    padding-right: 15px;
+  }
+}

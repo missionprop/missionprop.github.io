@@ -13,10 +13,15 @@ $theme-colors: (
 );
 
 @import "bootstrap/bootstrap";
-@import "home";
+@import "navbar";
+
+html,body {
+  height: 100%;
+}
 
 body {
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 .bottom-shadow {
@@ -48,6 +53,27 @@ body {
 
   @include media-breakpoint-down(md) {
     background-color: rgb(255, 255, 255) !important;
+  }
+
+}
+
+.bg-landing-image {
+  height: 85%;
+}
+
+.landing-carousel.carousel {
+  height: 85%;
+
+  & .carousel-inner {
+    height: 100%;
+
+    & .carousel-item {
+      height: 100%;
+    }
+
+    & .bg-landing-image {
+      height: 100%;
+    }
   }
 
 }

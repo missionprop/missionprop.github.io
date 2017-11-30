@@ -1,20 +1,18 @@
-<nav class="navbar fixed-top navbar-expand-md navbar-light bg-white-slide-appear">
-    <div class="container">
-        <a class="navbar-brand caps" href="#">Mission Properties</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                {% include navitem.html href="/" content="Home" %}
-                {% include navitem.html href="/about" content="About" %}
-                {% include navitem.html href="/projects" content="Projects" %}
-                {% include navitem.html href="/leasing" content="Leasing" %}
-            </ul>
-        </div>
+<nav class="navbar fixed-top navbar-expand-md navbar-light bg-white-slide-appear px-0 justify-content-md-between">
+    <a class="navbar-brand caps bg-white" href="#">Mission Properties</a>
+    <button
+        class="navbar-toggler mr-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+        <ul class="navbar-links navbar-nav bg-white">
+            {% include navitem.html href="/" content="Home" %}
+            {% include navitem.html href="/about" content="About" %}
+            {% include navitem.html href="/projects" content="Projects" %}
+            {% include navitem.html href="/leasing" content="Leasing" %}
+        </ul>
     </div>
 </nav>
