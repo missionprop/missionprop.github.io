@@ -16,6 +16,7 @@
   padding: 3px 20% 3px 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  flex: 1 1 auto;
 
   @include media-breakpoint-down(md) {
     padding-right: 15px;
