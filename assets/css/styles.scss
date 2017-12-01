@@ -1,19 +1,21 @@
 ---
 ---
 
-$primary:       #2AAAB3;
-$secondary:     #53C4B7;
+$primary:       #0D1F61;
+$secondary:     #7EC030;
 $success:       #A5D6A7;
 $info:          #90CAF9;
 $warning:       #FFF59D;
 $danger:        #EF9A9A;
 
 $theme-colors: (
-  "gray": #9E9E9E
+  "gray": #9E9E9E,
+  "primary-light": #44468f
 );
 
 @import "bootstrap/bootstrap";
 @import "navbar";
+@import "footer";
 
 html,body {
   height: 100%;
